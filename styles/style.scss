@@ -1,5 +1,5 @@
 //Abstracts
-@import "abstracts/abstrcts.scss";
+@import "./abstracts/abstracts";
 
 //Base Styles
 // @import "base/";
@@ -11,16 +11,19 @@
 // @import "layouts/";
 
 
-html {
-  box-sizing: border-box;
+:root {
   font-size: $font-size;
+  line-height: 2rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
-  align-items: center;
+  justify-content: center;
   width: 100vw;
-  height: 100vh;
   background: $lightGray;
   font-family: $paragraph;
 }
@@ -39,15 +42,73 @@ a {
 .card-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 2rem;
+  padding: 3rem 1.5rem;
 }
 
 .card {
+  max-width: 270px;
+  height: 360px;
   width: 100%;
-  height: calc(100% / 3);
+  height: 100%;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  color: $white;
+
+  &__header {
+    margin: 2rem 0;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;    
+  }
+
+  &__text {
+    margin-right: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 200;
+  }
 
   &--orange {
-    background-color: $brightOrange;
+    background: $brightOrange;
   }
-  
+  &--cyan {
+    background: $cyan;
+  }
+  &--dark {
+    background: $darkCyan;
+  }
+}
+
+.card:nth-child(1){
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card:nth-child(3){
+  border-radius: 0 0 1rem 1rem;
+}
+
+// Button
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-white{
+  background: $white;
+}
+
+.btn-white:hover{
+  background: rgba(255, 255, 255, 0.651);
+}
+
+.text--orange{
+  color: $brightOrange;
+}
+
+.text--cyan{
+  color: $cyan;
+}
+
+.text--dark{
+  color: $darkCyan;
 }
