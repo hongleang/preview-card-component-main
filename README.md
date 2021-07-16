@@ -36,28 +36,31 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/hongleang/preview-card-component-main)
+- Live Site URL: [Add live site URL here](https://hongleang.github.io/preview-card-component-main/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
+- Css BEM
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
+- Scss
 
 
 ### What I learned
-
-
+- CSS variables
+- Border-box: box-sizing and padding behaviour
+- CSS BEM naming convention
+- SASS folder structure
 
 ### Continued development
 
@@ -65,8 +68,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [resource 1](https://matthewelsom.com/blog/simple-scss-playbook.html) - This helped me in structuring my SASS model. I really liked this pattern and will use it going forward.
 
 
 ## Author
