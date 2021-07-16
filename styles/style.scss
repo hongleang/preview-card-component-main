@@ -5,7 +5,7 @@
 // @import "base/";
 
 //Components
-// @import "components/";
+@import "components/components";
 
 //Layout
 // @import "layouts/";
@@ -38,77 +38,8 @@ a {
   text-decoration: none;
 }
 
-// Card
-.card-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 1.5rem;
-}
-
-.card {
-  max-width: 270px;
-  height: 360px;
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-  padding-bottom: 4rem;
-  color: $white;
-
-  &__header {
-    margin: 2rem 0;
-    font-size: 3rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;    
+@media (min-width: $smallTablet) {
+  body {
+    height: 100vh;
   }
-
-  &__text {
-    margin-right: 2.5rem;
-    margin-bottom: 3rem;
-    font-weight: 200;
-  }
-
-  &--orange {
-    background: $brightOrange;
-  }
-  &--cyan {
-    background: $cyan;
-  }
-  &--dark {
-    background: $darkCyan;
-  }
-}
-
-.card:nth-child(1){
-  border-radius: 1rem 1rem 0 0;
-}
-
-.card:nth-child(3){
-  border-radius: 0 0 1rem 1rem;
-}
-
-// Button
-.btn {
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.btn-white{
-  background: $white;
-}
-
-.btn-white:hover{
-  background: rgba(255, 255, 255, 0.651);
-}
-
-.text--orange{
-  color: $brightOrange;
-}
-
-.text--cyan{
-  color: $cyan;
-}
-
-.text--dark{
-  color: $darkCyan;
 }
