@@ -64,7 +64,8 @@ Users should be able to:
 
 ### Continued development
 
-
+- Responsive to smaller size mobile screen
+- Responsive to small tablet size
 
 ### Useful resources
 
