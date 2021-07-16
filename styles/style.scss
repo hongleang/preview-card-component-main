@@ -11,6 +11,43 @@
 // @import "layouts/";
 
 
+html {
+  box-sizing: border-box;
+  font-size: $font-size;
+}
+
 body {
-  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: $lightGray;
+  font-family: $paragraph;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Card
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.card {
+  width: 100%;
+  height: calc(100% / 3);
+
+  &--orange {
+    background-color: $brightOrange;
+  }
+  
 }
